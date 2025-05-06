@@ -1,39 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>潖潖🔭赐</title><link>https://k.zcr6.ddns-ip.net</link><description>一些随手的笔记</description><copyright>潖潖🔭赐</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/zb9678/img@main/im7/04.21:08:56:22.png</url><title>avatar</title><link>https://k.zcr6.ddns-ip.net</link></image><lastBuildDate>Tue, 06 May 2025 06:10:47 +0000</lastBuildDate><managingEditor>潖潖🔭赐</managingEditor><ttl>60</ttl><webMaster>潖潖🔭赐</webMaster><item><title>切换音频设备</title><link>https://k.zcr6.ddns-ip.net/post/qie-huan-yin-pin-she-bei.html</link><description>## 切换音频设备
 
-```
-CoordMode, Mouse, Screen
-
-#SingleInstance Force 
-Menu, Tray, Icon, D:\ahk1.0\Lib\0\Alien.ico
-;#notrayicon
-	; 指定 SoundVolumeView 的路径
-	global SoundVolumeViewPath, devices, currentIndex, command
-	SoundVolumeViewPath := 'D:\ahk1.0\Lib\soundvolumeview-x64\SoundVolumeView.exe'
-	; 定义设备名称（确保这些设备名称与 SoundVolumeView 中显示的名称完全匹配）
-	devices := ['耳机', '音箱', '手机']
-	currentIndex := 0  ; 当前设备的索引
-appskey &amp; F1::
-	currentIndex := (currentIndex + 1) &gt; devices.MaxIndex() ? 1 : currentIndex + 1  ; 循环切换  
-    	; 拼接命令
-	command := SoundVolumeViewPath . ' /SetDefault ''' . devices[currentIndex] . ''' ''Render'''
-    
-    	; 调试：显示生成的命令，检查是否正确
-{
-    	loop, 1
-        	SoundBeep, 400, 10
-; 400 声音频率, 可以为表达式. 它是介于 37-32767 之间的数字. 省略则频率为523
-; -------------------10 声音的持续时间, 单位为毫秒. 如果省略, 则持续时间为 150     
-        	; 显示当前设备名称
-        	Text := '⭕    ' . devices[currentIndex] . '   ⭕'
-        	btt(Text, 600, 10, ,'Style7')
-        	sleep, 500
-        	btt()
-}    
-    	Run, %command%                              ; ----------------------执行命令
-    	return
-;ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ     切换音频设备     ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ 1-29
-```。</description><guid isPermaLink="true">https://k.zcr6.ddns-ip.net/post/qie-huan-yin-pin-she-bei.html</guid><pubDate>Sat, 03 May 2025 07:53:36 +0000</pubDate></item><item><title>Tool2</title><link>https://k.zcr6.ddns-ip.net/Tool2.html</link><description>
 
 
 🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛git_cf 🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛
@@ -104,7 +69,7 @@ appskey &amp; F1::
 
 ===================https://panel4.serv00.com
 
-== https://mail.serv00.com/?_task=mail&amp;_mbox=INBOX
+== https://mail.serv00.com/?_task=mail&_mbox=INBOX
 
 1======4====F7===1@kevzcr.serv00.net
 
@@ -599,12 +564,12 @@ https://gob64.topmarco.tech
 https://github.com/zcr07/am-cf-tunnel/blob/main/ipUrl.txt
 https://raw.githubusercontent.com/zcr07/am-cf-tunnel/refs/heads/main/ipUS.txt 删除红色
 https://raw.githubusercontent.com/zcr07/am-cf-tunnel/main/ipUrl.txt
-&amp;IP_URL=https://raw.githubusercontent.com/zcr07/am-cf-tunnel/main/ipUrl.txt
-&amp;IP_URL=https://raw.githubusercontent.com/zb9678/am-cf-tunnel/main/ipUrl.txt
-&amp;IP_URL=https://raw.githubusercontent.com/zbb07/am-cf-tunnel/main/ipUrl.txt
-&amp;IP_URL=https://raw.githubusercontent.com/kevzcr/am-cf-tunnel/main/ipUrl.txt
-&amp;IP_URL=https://raw.githubusercontent.com/zyy200712/am-cf-tunnel/main/ipUrl.txt
-&amp;IP_URL=https://raw.githubusercontent.com/zbb7001/am-cf-tunnel/main/ipUrl.txt
+&IP_URL=https://raw.githubusercontent.com/zcr07/am-cf-tunnel/main/ipUrl.txt
+&IP_URL=https://raw.githubusercontent.com/zb9678/am-cf-tunnel/main/ipUrl.txt
+&IP_URL=https://raw.githubusercontent.com/zbb07/am-cf-tunnel/main/ipUrl.txt
+&IP_URL=https://raw.githubusercontent.com/kevzcr/am-cf-tunnel/main/ipUrl.txt
+&IP_URL=https://raw.githubusercontent.com/zyy200712/am-cf-tunnel/main/ipUrl.txt
+&IP_URL=https://raw.githubusercontent.com/zbb7001/am-cf-tunnel/main/ipUrl.txt
 =================================01 zcr  Torjan
 ant.zbb07.dpdns.org
 ant.zcr07.dpdns.org
@@ -618,7 +583,7 @@ winter-dew-jiedtr
 通用订阅地址:  点击复制订阅地址 
 https://ant.zbb25.filegear-sg.me/zbb?sub
 
-https://ant.zbb25.filegear-sg.me/zbb?sub&amp;IP_URL=https://raw.githubusercontent.com/zcr07/am-cf-tunnel/main/ipUrl.txt
+https://ant.zbb25.filegear-sg.me/zbb?sub&IP_URL=https://raw.githubusercontent.com/zcr07/am-cf-tunnel/main/ipUrl.txt
 
 Base64订阅地址:  点击复制订阅地址 
 https://ant.zbb25.filegear-sg.me/zbb?base64
@@ -645,7 +610,7 @@ https://am.zcr4.ip-ddns.com/88f67d70-5a4f-4485-b983-c9caad714a48/ui
 通用订阅地址:  点击复制订阅地址 
 https://am.zcr4.ip-ddns.com/88f67d70-5a4f-4485-b983-c9caad714a48?sub
 
-https://am.zcr4.ip-ddns.com/88f67d70-5a4f-4485-b983-c9caad714a48?sub&amp;IP_URL=https://raw.githubusercontent.com/zcr07/am-cf-tunnel/main/ipUrl.txt
+https://am.zcr4.ip-ddns.com/88f67d70-5a4f-4485-b983-c9caad714a48?sub&IP_URL=https://raw.githubusercontent.com/zcr07/am-cf-tunnel/main/ipUrl.txt
 
 Base64订阅地址:  点击复制订阅地址 
 https://am.zcr4.ip-ddns.com/88f67d70-5a4f-4485-b983-c9caad714a48?base64
@@ -671,7 +636,7 @@ https://tr.z9678.dynv6.net/auto/ui  zbb
 通用订阅地址:  点击复制订阅地址 
 https://tr.z9678.dynv6.net/zbb?sub
 
-https://tr.z9678.dynv6.net/zbb?sub&amp;IP_URL=https://raw.githubusercontent.com/zb9678/am-cf-tunnel/main/ipUrl.txt
+https://tr.z9678.dynv6.net/zbb?sub&IP_URL=https://raw.githubusercontent.com/zb9678/am-cf-tunnel/main/ipUrl.txt
 
 Base64订阅地址:  点击复制订阅地址 
 https://tr.z9678.dynv6.net/zbb?base64
@@ -695,7 +660,7 @@ idele-siekls-kdavls
 通用订阅地址:  点击复制订阅地址 
 https://v.zcr07.dynv6.net/72433d51-dc63-4ffe-a5e4-a97f0d87c764?sub
 
-https://v.zcr07.dynv6.net/72433d51-dc63-4ffe-a5e4-a97f0d87c764?sub&amp;IP_URL=https://raw.githubusercontent.com/zb9678/am-cf-tunnel/main/ipUrl.txt
+https://v.zcr07.dynv6.net/72433d51-dc63-4ffe-a5e4-a97f0d87c764?sub&IP_URL=https://raw.githubusercontent.com/zb9678/am-cf-tunnel/main/ipUrl.txt
 
 Base64订阅地址:  点击复制订阅地址 
 https://v.zcr07.dynv6.net/72433d51-dc63-4ffe-a5e4-a97f0d87c764?base64
@@ -724,7 +689,7 @@ tk.r9678.rr.nu
 通用订阅地址:  点击复制订阅地址 
 https://tk.z07.isgre.at/zbb?sub
 
-https://tk.zcr25.dedyn.io/zbb?sub&amp;IP_URL=https://raw.githubusercontent.com/zbb07/am-cf-tunnel/main/ipUrl.txt
+https://tk.zcr25.dedyn.io/zbb?sub&IP_URL=https://raw.githubusercontent.com/zbb07/am-cf-tunnel/main/ipUrl.txt
 
 Base64订阅地址:  点击复制订阅地址 
 https://tk.z07.isgre.at/zbb?base64
@@ -749,7 +714,7 @@ still-field-jdvls
 通用订阅地址:  点击复制订阅地址 
 https://vk.c08.rr.nu/85cd6780-0b78-4deb-b11c-c07a10eb04fd?sub
 
-https://vk.zcr9.dedyn.io/85cd6780-0b78-4deb-b11c-c07a10eb04fd?sub&amp;IP_URL=https://raw.githubusercontent.com/zbb07/am-cf-tunnel/main/ipUrl.txt
+https://vk.zcr9.dedyn.io/85cd6780-0b78-4deb-b11c-c07a10eb04fd?sub&IP_URL=https://raw.githubusercontent.com/zbb07/am-cf-tunnel/main/ipUrl.txt
 
 Base64订阅地址:  点击复制订阅地址 
 https://vk.c08.rr.nu/85cd6780-0b78-4deb-b11c-c07a10eb04fd?base64
@@ -771,7 +736,7 @@ idele-siekls-ngtr
 通用订阅地址:  点击复制订阅地址 
 https://tn.zcr25.rr.nu/zbb?sub
 
-https://tn.zcr25.dedyn.io/zbb?sub&amp;IP_URL=https://raw.githubusercontent.com/kevzcr/am-cf-tunnel/main/ipUrl.txt
+https://tn.zcr25.dedyn.io/zbb?sub&IP_URL=https://raw.githubusercontent.com/kevzcr/am-cf-tunnel/main/ipUrl.txt
 
 Base64订阅地址:  点击复制订阅地址 
 https://tn.zcr25.rr.nu/zbb?base64
@@ -795,7 +760,7 @@ stssill-field-jdvls
 
 通用订阅地址:  点击复制订阅地址 
 https://vn.zcr25.netlib.re/dcabc1ad-9713-4c32-9559-597308a8f635?sub
-https://vn.zcr25.dedyn.io/dcabc1ad-9713-4c32-9559-597308a8f635?sub&amp;IP_URL=https://raw.githubusercontent.com/kevzcr/am-cf-tunnel/main/ipUrl.txt
+https://vn.zcr25.dedyn.io/dcabc1ad-9713-4c32-9559-597308a8f635?sub&IP_URL=https://raw.githubusercontent.com/kevzcr/am-cf-tunnel/main/ipUrl.txt
 
 Base64订阅地址:  点击复制订阅地址 
 https://vn.zcr25.netlib.re/dcabc1ad-9713-4c32-9559-597308a8f635?base64
@@ -820,7 +785,7 @@ idele-siekls-zyytr
 通用订阅地址:  点击复制订阅地址 
 https://t.zc5.rr.nu/zbb?sub
 
-https://t.zc5.rr.nu/zbb?sub&amp;IP_URL=https://raw.githubusercontent.com/zyy200712/am-cf-tunnel/main/ipUrl.txt
+https://t.zc5.rr.nu/zbb?sub&IP_URL=https://raw.githubusercontent.com/zyy200712/am-cf-tunnel/main/ipUrl.txt
 
 Base64订阅地址:  点击复制订阅地址 
 https://t.zc5.rr.nu/zbb?base64
@@ -844,7 +809,7 @@ sppill-lfid-jdvls
 通用订阅地址:  点击复制订阅地址 
 https://vy.zcr25.dedyn.io/6392b959-8e97-4f33-9ff6-665bfafdc1f0?sub
 
-https://vy.c08.rr.nu/6392b959-8e97-4f33-9ff6-665bfafdc1f0?sub&amp;IP_URL=https://raw.githubusercontent.com/zyy200712/am-cf-tunnel/main/ipUrl.txt
+https://vy.c08.rr.nu/6392b959-8e97-4f33-9ff6-665bfafdc1f0?sub&IP_URL=https://raw.githubusercontent.com/zyy200712/am-cf-tunnel/main/ipUrl.txt
 
 Base64订阅地址:  点击复制订阅地址 
 https://vy.zcr25.dedyn.io/6392b959-8e97-4f33-9ff6-665bfafdc1f0?base64
@@ -871,7 +836,7 @@ wild-snowflake-f2trj
 通用订阅地址:  点击复制订阅地址 
 https://trj.zcr5.ddns-ip.net/zbb?sub
 
-https://trj.zcr5.ddns-ip.net/zbb?sub&amp;IP_URL=https://raw.githubusercontent.com/zbb7001/am-cf-tunnel/main/ipUrl.txt
+https://trj.zcr5.ddns-ip.net/zbb?sub&IP_URL=https://raw.githubusercontent.com/zbb7001/am-cf-tunnel/main/ipUrl.txt
 
 Base64订阅地址:  点击复制订阅地址 
 https://trj.zcr5.ddns-ip.net/zbb?base64
@@ -895,7 +860,7 @@ still-fsad-jdvls
 通用订阅地址:  点击复制订阅地址 
 https://v7.zcr25.dedyn.io/03384cd4-59f9-44dc-8f5c-b4ce04305c12?sub
 
-https://v7.c08.rr.nu/03384cd4-59f9-44dc-8f5c-b4ce04305c12?sub&amp;IP_URL=https://raw.githubusercontent.com/zbb7001/am-cf-tunnel/main/ipUrl.txt
+https://v7.c08.rr.nu/03384cd4-59f9-44dc-8f5c-b4ce04305c12?sub&IP_URL=https://raw.githubusercontent.com/zbb7001/am-cf-tunnel/main/ipUrl.txt
 
 Base64订阅地址:  点击复制订阅地址 
 https://v7.zcr25.dedyn.io/03384cd4-59f9-44dc-8f5c-b4ce04305c12?base64
@@ -922,7 +887,7 @@ wild-snowflake-f2vlc
 通用订阅地址:  点击复制订阅地址 
 https://vlc.zcr5.ddns-ip.net/c683a04f-d1fb-43f7-8e41-9b443c2db18e?sub
 
-https://vlc.zcr5.ddns-ip.net/c683a04f-d1fb-43f7-8e41-9b443c2db18e?sub&amp;IP_URL=https://raw.githubusercontent.com/zbb7001/am-cf-tunnel/main/ipUrl.txt
+https://vlc.zcr5.ddns-ip.net/c683a04f-d1fb-43f7-8e41-9b443c2db18e?sub&IP_URL=https://raw.githubusercontent.com/zbb7001/am-cf-tunnel/main/ipUrl.txt
 
 Base64订阅地址:  点击复制订阅地址 
 https://vlc.zcr5.ddns-ip.net/c683a04f-d1fb-43f7-8e41-9b443c2db18e?base64
@@ -1240,7 +1205,7 @@ https://zyd.zbb.dns-dynamic.net/z?clash
 singbox订阅地址:
 https://zyd.zbb.dns-dynamic.net/z?sb
 
-vless://a2a6f6ae-7f5b-42ed-9842-e346e56bc22b@zyd.zcr25.ggff.net:2087?encryption=none&amp;security=tls&amp;sni=zyd.zcr25.ggff.net&amp;fp=randomized&amp;type=ws&amp;host=zyd.zcr25.ggff.net&amp;path=%2F%3Fed%3D2560#zy
+vless://a2a6f6ae-7f5b-42ed-9842-e346e56bc22b@zyd.zcr25.ggff.net:2087?encryption=none&security=tls&sni=zyd.zcr25.ggff.net&fp=randomized&type=ws&host=zyd.zcr25.ggff.net&path=%2F%3Fed%3D2560#zy
 
 =================================订阅地址bpb kev
 https://bpbkev.v07.us.kg/sub/8829a139-67b5-4ca8-a09a-8d1de22e428f?app=singbox#BPB-Normal
@@ -1397,4 +1362,525 @@ https://bpbzb9.zbb06.filegear-sg.me/panel
 
 ================================= 10 BPB kev
 https://bpbkev.zbb22.ggff.net/panel
-。</description><guid isPermaLink="true">https://k.zcr6.ddns-ip.net/Tool2.html</guid><pubDate>Tue, 06 May 2025 06:10:23 +0000</pubDate></item></channel></rss>
+。">
+<meta property="og:title" content="Tools">
+<meta property="og:description" content="## git_cf
+
+
+🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛git_cf 🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛
+
+01==========cf============zcr071225@gmail.com =======  F8
+
+01===Gi============zb9678@hotmail.com ======== F7
+
+
+➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿
+
+02==========cf============zb9678@gmail.com ========= F8
+
+02===Gi============zb9678@outlook.com ======== F7
+
+
+➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿
+
+03==========cf============kev071225@gmail.com ======= F8
+
+03===Gi============zb9678@gmail.com ========= F7
+
+
+➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿
+
+04==========cf============ngro1031@gmail.com ======= F8
+
+04===Gi============kev071225@gmail.com ======== F7
+
+➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿
+
+05==========cf============zyy7031@gmail.com ======== F8
+
+05===Gi============zyy7031@gmail.com  ========= F7
+
+
+➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿➿
+
+06==========cf============zbb7001@gmail.com======== F8
+
+06===Gi============zbb7001@gmail.com========= zb
+
+
+## gmail
+
+
+🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛gmail邮箱 🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛
+
+=========https://github.com =========https://dash.cloudflare.com
+
+01======================= F7 ======= zcr071225@gmail.com
+
+02======================= Zcr8 =======  zb9678@gmail.com
+
+03====================== F7 =======  kev071225@gmail.com
+
+04====================== F7 ========  ngro1031@gmail.com
+
+05======================== F8 =======  zyy7031@gmail.com
+
+06========================  F8 ======= zbb7001@gmail.com
+
+
+## serv00
+
+
+🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛serv00 邮箱🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛
+
+===================https://panel4.serv00.com
+
+== https://mail.serv00.com/?_task=mail&_mbox=INBOX
+
+1======4====F7===1@kevzcr.serv00.net
+
+2======9=========2@zb7.serv00.net
+
+3======8=========3@z07.serv00.net
+
+4======8=========4@z88.serv00.net
+
+5======0=========6@z11.serv00.net
+
+6======0=========9@z99.serv00.net
+
+
+## rr.nu 
+
+
+🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 rr.nu 🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 01
+
+===========https://hostry.com/orders
+
+===========================F7=======zcr071225@gmail.com
+
+
+## desec.io 
+
+
+🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪 desec.io 🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪 02
+
+==============https://desec.io/login
+
+====zcr25.dedyn.io====F7==================zcr76@outlook.com
+
+====zcr9.dedyn.io=====F7==================zcr02@outlook.com 
+
+
+## he 
+
+
+🟪🟪🟪🟪🟪🟪🟪🟪🟪 he 不能开科学 🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪 04
+
+==========https://dns.he.net
+
+=======z8======zcr25.rr.nu========================zcr07
+
+
+## L53
+
+
+🧮🧮🧮🧮🧮🧮🧮🧮🧮🧮  L53  🧮🧮🧮🧮🧮🧮🧮🧮🧮🧮🧮🧮 07
+
+=====https://customer.l53.net/
+
+=============zbb25.filegear-sg.me============== 26.2.22
+
+==============ngro1031@gmail.com ================  F7
+
+
+=====https://customer.l53.net/
+
+=============zcr06.filegear-sg.me================   26.2.22
+
+============zb9678@outlook.com================  F7
+
+
+## ddns-ip
+
+
+🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 ddns-ip 🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 08
+
+============================= https://outlook.live.com/mail/0
+
+1=====zyy======zb9678@outlook.com============= Zb 99999
+
+2=============zcr60@outlook.com============== Zb 99999
+
+===============zcr5.ddns-ip.net
+
+3=============zcr61@outlook.com============== Zb 99999
+
+4=============zcr00@outlook.com============== Zb 99999
+
+5=============zcr97@outlook.com============== Zb 99999
+
+
+🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 ddns-ip🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 09
+
+============================= https://outlook.live.com/mail/0
+
+01=====Zb6666=====zb9678@gmail.com
+
+02=====Zb8=====zcr74@outlook.com========= zcr8.ddns-ip.net
+
+03=====Zb6666=====zcr76@outlook.com====== zcr7.ggff.net==26.4.1
+
+04=====Zb6666=====zcr55@outlook.com
+
+05=====Zb6666=====zcr57@outlook.com========= zc25.ip-ddns.com
+
+06=====Zb6666=====zbb102@outlook.com
+
+07=====Zb6666=====zcr102@outlook.com
+
+🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 ip-ddns🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 10
+
+============================= https://outlook.live.com/mail/0
+
+01====F6=======zb9678@hotmail.com
+
+02====F7=======zcr01@outlook.com===========zcr7.ip-ddns.com
+
+03====F6=======zcr02@outlook.com============zcr3.ddns-ip.net
+
+04====F6=======zcr48@outlook.com
+
+05====F6=======zcr54@outlook.com
+
+🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 ddns-ip 🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 11
+
+============================= https://outlook.live.com/mail/0
+
+01====F7=======zcr071225@gmail.com
+
+02====F7=======zcr0711@outlook.com
+
+03====F7=======zcr0712@outlook.com===========zcr6.ddns-ip.net
+
+04====F7=======zcr0713@outlook.com
+
+05====F7=======zcr07145@outlook.com
+
+06====F7=======zcr0715@outlook.com
+
+07====F7=======zcr1225@outlook.com========== zcr4.ip-ddns.com
+
+
+## cloudns.be
+
+
+🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱cloudns.be🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 12
+
+============= https://www.cloudns.net/records/domain/7778373/
+
+01====F7=======r@zbb07.filegear-sg.me ===========  r07.cloudns.be
+
+02====F7=======z@zbb07.filegear-sg.me =========== z07.cloudns.be
+
+03====F7=======1@zbb07.filegear-sg.me =========== k07.cloudns.be
+
+
+## X10
+
+
+🧮🧮🧮🧮🧮 x10 🧮🧮3个月至少登录一次🧮🧮🧮🧮7.12前🧮🧮🧮🧮🧮 13
+
+=============https://x10hosting.com
+
+======F7=======zbb7001@gmail.com
+
+============= zcr25.x10.bz ================== 7001
+
+============= zcr25.elementfx.com ============= ng
+
+	
+============= zcr25.x10.mx ================== zcr
+
+
+🧮🧮🧮🧮🧮 x10 🧮🧮3个月至少登录一次🧮🧮🧮🧮7.12前🧮🧮🧮🧮🧮 14
+
+=============https://x10hosting.com
+
+======F7===== zcr071225@gmail.com
+
+============= zb25.elementfx.com ============  kev
+
+============= zb25.x10.bz =================   zyy
+
+============= zb25.x10.mx =================  zb9
+
+
+## 申请
+
+
+🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛域名 申请🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛 申请
+
+===========https://sitelutions.com/login
+
+==================zbb7001@gmail.com============  z8
+
+
+
+##  dynv6
+
+
+🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛 dynv6🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛🚛 15
+
+============== https://dynv6.com/zones
+
+===========================F7========zyy7031@gmail.com
+
+-----------------------y9678.dynv6.net--------------------------
+
+-----------------------r9678.rr.nu------------------------
+
+===========================F7========ngro1031@gmail.com
+
+-----------------------n9678.dynv6.net--------------------------
+
+-----------------------n9678.rr.nu------------------------
+
+
+===========================F7========zcr071225@gmail.com
+
+-----------------------zcr05.v6.army--------------------------
+
+-----------------------zcr05.rr.nu------------------------
+
+
+
+===========================F7========zcr55@outlook.com
+
+-----------------------kevv6.v6.army--------------------------
+
+----------------------- .rr.nu------------------------
+
+
+## hidns.co
+
+
+🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪  hidns.co 🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪 06
+
+=====托管至== https://hostry.com/orders/
+
+=========== https://www.hidoha.net/order/service/manage/
+
+==================zbb25.hidns.co    26.3.17==============  zcr
+
+==================zcr25.hidns.co    26.3.17=============== zcr
+
+
+
+## netlib.re
+
+
+🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 netlib.re 🧱🧱🧱🧱🧱26.2.22🧱🧱🧱🧱🧱 03
+
+==============https://www.netlib.re
+
+=========zcr25.netlib.re====zcr===============zcr071225@gmail
+
+=========zcr07.netlib.re====zcr===============zcr071225@gmail
+
+
+
+
+## zone.id
+
+
+🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 zone.id 🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱🧱 05
+
+===========https://my.zone.id/subdomains/q0iq1q1iq/dns_record
+
+=========F7========zcr5.zone.id    26.4.11== zcr071225@gmail.com
+
+===========https://my.zone.id/subdomains/a1ipceiq/dns_record
+
+=========F7========zb70.zone.id    26.4.13== zbb7001@gmail.com
+
+
+
+📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢 📢📢
+
+📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢 
+
+
+## 其它
+
+
+===============================zcr
+
+https://dash.cloudflare.com/addfe9fc56c06acb158fd7b4883b478f/pages/view/x10/settings/production
+
+bdcd8f4b-7d60-4f18-8082-3c94a77cd1a5
+
+TR_PASS
+
+PROXYIP
+
+.github/workflows/Obfuscate.yml
+
+TR_PASS
+
+jx(oeD3]_eKad7@y
+
+SUB_PATH
+
+R,0*k*NTHfYT7uhZ
+
+https://ddd.n06.us.kg/panel
+
+=============================== 双向解析 zcr  x10hosting
+
+https://x10hosting.com/panel/services/152028
+
+zcr071225@gmail.com
+
+F7
+
+zb25.elementfx.com        kev
+
+zb25.x10.bz              zyy
+
+zb25.x10.mx              zb9
+
+=============================== 双向解析 7001
+
+https://x10hosting.com/panel/services/152028
+
+zbb7001@gmail.com
+
+Zb8
+
+zcr25.x10.bz             7001
+
+zcr25.elementfx.com      ng
+	
+zcr25.x10.mx             zcr
+
+📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢📢
+
+======================zcr======================
+
+-----------------------------zb9.dpdns.org
+
+-----------------------------zcr07.dpdns.org
+
+-----------------------------zbb07.dpdns.org
+
+-----------------------------zcr4.ip-ddns.com
+
+-----------------------------zbb25.filegear-sg.me
+
+-----------------------------r07.cloudns.be
+
+-----------------------------zcr25.x10.mx
+
+-----------------------------zc23.cc.ua
+
+======================zb9======================
+
+-----------------------------r08.dpdns.org
+
+-----------------------------k07.dpdns.org
+
+-----------------------------z07.dpdns.org
+
+-----------------------------zcr3.ddns-ip.net
+
+-----------------------------zbb06.filegear-sg.me
+
+-----------------------------z07.cloudns.be
+
+-----------------------------zb25.x10.mx
+
+-----------------------------kev25.cc.ua
+
+======================kev======================
+
+-----------------------------n06.dpdns.org
+
+-----------------------------v07.dpdns.org
+
+-----------------------------zcr6.ddns-ip.net
+
+-----------------------------zcr07.ddns-ip.net
+
+-----------------------------b01.dns-dynamic.net
+
+-----------------------------zcr07.filegear-sg.me
+
+-----------------------------zbb22.ggff.net
+
+-----------------------------zb25.elementfx.com
+
+-----------------------------zb9.cc.ua
+
+======================ng======================
+
+-----------------------------j07.dpdns.org
+
+-----------------------------u07.dpdns.org
+
+-----------------------------zcr7.ip-ddns.com
+
+-----------------------------zc25.ip-ddns.com
+
+-----------------------------zcr07.dns-dynamic.net
+
+-----------------------------zcr06.filegear-sg.me
+
+-----------------------------k07.cloudns.be
+
+-----------------------------zcr25.elementfx.com
+
+-----------------------------ng25.cc.ua
+
+-----------------------------zc24.cc.ua
+
+======================zyy======================
+
+-----------------------------zc08.dpdns.org
+
+-----------------------------zcr8.ddns-ip.net
+
+-----------------------------zc25.ddns-ip.net
+
+-----------------------------zbb.dns-dynamic.net
+
+-----------------------------zcr25.ggff.net
+
+-----------------------------zcr7.ggff.net
+
+-----------------------------zb25.x10.bz
+
+
+======================7001======================
+
+-----------------------------h07.dpdns.org
+
+-----------------------------w07.dpdns.org
+
+-----------------------------y07.dpdns.org
+
+-----------------------------zcr5.ddns-ip.net
+
+-----------------------------zc07.ip-ddns.com
+
+-----------------------------zzzzz.dns-dynamic.net
+
+-----------------------------zbb07.filegear-sg.me
+
+-----------------------------zcr6.ggff.net
+
+-----------------------------zcr25.x10.bz
+
+
+
+
